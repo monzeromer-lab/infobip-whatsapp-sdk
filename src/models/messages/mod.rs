@@ -1,0 +1,9 @@
+pub mod text;
+pub mod template;
+pub mod document;
+pub mod image;
+pub mod audio;
+pub mod video;
+pub mod sticker;
+pub mod location;
+pub mod contact;

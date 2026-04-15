@@ -1,0 +1,33 @@
+[package]
+name = "infobip-whatsapp-sdk"
+version = "0.1.0"
+edition = "2024"
+description = "Type-safe Rust SDK for the Infobip WhatsApp Business API — send messages, manage templates, handle flows, and more"
+documentation = "https://docs.rs/infobip-whatsapp-sdk"
+readme = "README.md"
+homepage = "https://github.com/monzer-omer/infobip-whatsapp-sdk"
+repository = "https://github.com/monzer-omer/infobip-whatsapp-sdk"
+license = "MIT"
+keywords = ["api", "infobip", "messaging", "sdk", "whatsapp"]
+categories = ["api-bindings", "web-programming::http-client"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+name = "infobip_sdk"
+path = "src/lib.rs"
+
+[dependencies]
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.12", features = ["json", "multipart"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+url = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+wiremock = "0.6"
