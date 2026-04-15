@@ -38,8 +38,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::buttons::InteractiveButtonsMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::buttons::InteractiveButtonsMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -62,8 +62,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::list::InteractiveListMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::list::InteractiveListMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -86,8 +86,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::media_carousel::InteractiveMediaCarouselMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::media_carousel::InteractiveMediaCarouselMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -110,8 +110,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::location_request::InteractiveLocationRequestMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::location_request::InteractiveLocationRequestMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -134,8 +134,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::product::InteractiveProductMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::product::InteractiveProductMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -158,8 +158,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::multi_product::InteractiveMultiProductMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::multi_product::InteractiveMultiProductMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -182,8 +182,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::order_details::InteractiveOrderDetailsMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::order_details::InteractiveOrderDetailsMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -206,8 +206,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::order_status::InteractiveOrderStatusMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::order_status::InteractiveOrderStatusMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -230,8 +230,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::flow::InteractiveFlowMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::flow::InteractiveFlowMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -254,8 +254,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::url_button::InteractiveUrlButtonMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::url_button::InteractiveUrlButtonMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -278,8 +278,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::call_permission::InteractiveCallPermissionRequestMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::call_permission::InteractiveCallPermissionRequestMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);
@@ -302,8 +302,8 @@ impl<'a> InteractiveApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::interactive::voice_button::InteractiveVoiceButtonMessage;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::interactive::voice_button::InteractiveVoiceButtonMessage;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);

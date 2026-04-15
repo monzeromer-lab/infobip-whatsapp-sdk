@@ -1,6 +1,6 @@
 [package]
 name = "infobip-whatsapp-sdk"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 description = "Type-safe Rust SDK for the Infobip WhatsApp Business API — send messages, manage templates, handle flows, and more"
 documentation = "https://docs.rs/infobip-whatsapp-sdk"
@@ -16,7 +16,7 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [lib]
-name = "infobip_sdk"
+name = "infobip_whatsapp_sdk"
 path = "src/lib.rs"
 
 [dependencies]

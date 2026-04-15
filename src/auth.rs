@@ -16,7 +16,7 @@ use base64::engine::general_purpose::STANDARD;
 /// # Examples
 ///
 /// ```rust
-/// use infobip_sdk::Auth;
+/// use infobip_whatsapp_sdk::Auth;
 ///
 /// // Most common: API key from your Infobip dashboard
 /// let auth = Auth::ApiKey("your-api-key-here".into());

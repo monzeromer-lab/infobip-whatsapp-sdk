@@ -1,9 +1,9 @@
-use infobip_sdk::models::conversions::*;
-use infobip_sdk::models::events::*;
-use infobip_sdk::models::flows::*;
-use infobip_sdk::models::identity::*;
-use infobip_sdk::models::templates::v2::*;
-use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
+use infobip_whatsapp_sdk::models::conversions::*;
+use infobip_whatsapp_sdk::models::events::*;
+use infobip_whatsapp_sdk::models::flows::*;
+use infobip_whatsapp_sdk::models::identity::*;
+use infobip_whatsapp_sdk::models::templates::v2::*;
+use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
 use wiremock::matchers::{method, path};
 use wiremock::{Mock, MockServer, ResponseTemplate};
 
@@ -536,7 +536,7 @@ async fn rate_limit_429() {
         .mount(&server)
         .await;
 
-    let msg = infobip_sdk::models::messages::text::TextMessage::new("s", "r", "t");
+    let msg = infobip_whatsapp_sdk::models::messages::text::TextMessage::new("s", "r", "t");
     let err = client.messages().send_text(&msg).await.unwrap_err();
     let api_err = err.api_error().expect("expected Api error");
     assert_eq!(api_err.status(), 429);

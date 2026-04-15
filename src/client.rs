@@ -17,8 +17,8 @@ use crate::error::{ApiError, InfobipError, Result};
 /// # Examples
 ///
 /// ```rust,no_run
-/// use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-/// use infobip_sdk::models::messages::text::TextMessage;
+/// use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+/// use infobip_whatsapp_sdk::models::messages::text::TextMessage;
 ///
 /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
 /// let config = ClientConfig::new(
@@ -44,7 +44,7 @@ use crate::error::{ApiError, InfobipError, Result};
 /// `reqwest::Client` (e.g. with custom timeouts or proxy settings):
 ///
 /// ```rust,no_run
-/// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
+/// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
 /// let http = reqwest::Client::builder()
 ///     .timeout(std::time::Duration::from_secs(30))
 ///     .build()

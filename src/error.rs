@@ -27,8 +27,8 @@
 //! # Examples
 //!
 //! ```rust,no_run
-//! # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-//! # use infobip_sdk::models::messages::text::TextMessage;
+//! # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+//! # use infobip_whatsapp_sdk::models::messages::text::TextMessage;
 //! # async fn example() {
 //! # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into())).unwrap();
 //! # let client = WhatsAppClient::new(config);
@@ -82,7 +82,7 @@ pub enum InfobipError {
 /// # Examples
 ///
 /// ```rust,no_run
-/// # use infobip_sdk::ApiError;
+/// # use infobip_whatsapp_sdk::ApiError;
 /// # fn example(api_err: &ApiError) {
 /// // Classification
 /// assert!(api_err.is_client_error());  // 4xx

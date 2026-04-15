@@ -28,8 +28,8 @@ impl<'a> EventsApi<'a> {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-    /// # use infobip_sdk::models::events::WhatsAppEventRequest;
+    /// # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+    /// # use infobip_whatsapp_sdk::models::events::WhatsAppEventRequest;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// # let config = ClientConfig::new("https://x.api.infobip.com", Auth::ApiKey("k".into()))?;
     /// # let client = WhatsAppClient::new(config);

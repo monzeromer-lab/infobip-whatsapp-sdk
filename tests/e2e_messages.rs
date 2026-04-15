@@ -1,12 +1,12 @@
-use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-use infobip_sdk::models::messages::text::TextMessage;
-use infobip_sdk::models::messages::document::DocumentMessage;
-use infobip_sdk::models::messages::image::ImageMessage;
-use infobip_sdk::models::messages::audio::AudioMessage;
-use infobip_sdk::models::messages::video::VideoMessage;
-use infobip_sdk::models::messages::sticker::StickerMessage;
-use infobip_sdk::models::messages::location::LocationMessage;
-use infobip_sdk::models::messages::template::{
+use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+use infobip_whatsapp_sdk::models::messages::text::TextMessage;
+use infobip_whatsapp_sdk::models::messages::document::DocumentMessage;
+use infobip_whatsapp_sdk::models::messages::image::ImageMessage;
+use infobip_whatsapp_sdk::models::messages::audio::AudioMessage;
+use infobip_whatsapp_sdk::models::messages::video::VideoMessage;
+use infobip_whatsapp_sdk::models::messages::sticker::StickerMessage;
+use infobip_whatsapp_sdk::models::messages::location::LocationMessage;
+use infobip_whatsapp_sdk::models::messages::template::{
     BulkMessage, FailoverMessage, TemplateContent, TemplateDataContent, TemplateBodyContent,
 };
 use wiremock::matchers::{method, path, header, body_json};

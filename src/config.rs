@@ -10,7 +10,7 @@ use crate::Auth;
 /// # Examples
 ///
 /// ```rust
-/// use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
+/// use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
 ///
 /// let config = ClientConfig::new(
 ///     "https://your-base-url.api.infobip.com",

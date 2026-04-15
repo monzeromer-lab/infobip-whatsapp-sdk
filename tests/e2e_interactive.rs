@@ -1,9 +1,9 @@
-use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-use infobip_sdk::models::interactive::common::{InteractiveBody, InteractiveFooter};
-use infobip_sdk::models::interactive::buttons::*;
-use infobip_sdk::models::interactive::list::*;
-use infobip_sdk::models::interactive::product::*;
-use infobip_sdk::models::interactive::location_request::*;
+use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+use infobip_whatsapp_sdk::models::interactive::common::{InteractiveBody, InteractiveFooter};
+use infobip_whatsapp_sdk::models::interactive::buttons::*;
+use infobip_whatsapp_sdk::models::interactive::list::*;
+use infobip_whatsapp_sdk::models::interactive::product::*;
+use infobip_whatsapp_sdk::models::interactive::location_request::*;
 use wiremock::matchers::{method, path};
 use wiremock::{Mock, MockServer, ResponseTemplate};
 

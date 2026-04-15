@@ -17,8 +17,8 @@ tokio = { version = "1", features = ["full"] }
 ## Quick Start
 
 ```rust
-use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-use infobip_sdk::models::messages::text::TextMessage;
+use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+use infobip_whatsapp_sdk::models::messages::text::TextMessage;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -41,7 +41,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 The SDK supports all four Infobip authentication methods:
 
 ```rust
-use infobip_sdk::Auth;
+use infobip_whatsapp_sdk::Auth;
 
 // API Key (most common - from your Infobip dashboard)
 let auth = Auth::ApiKey("your-api-key".into());
@@ -64,7 +64,7 @@ let auth = Auth::IbSso("sso-token".into());
 ### Text
 
 ```rust
-use infobip_sdk::models::messages::text::TextMessage;
+use infobip_whatsapp_sdk::models::messages::text::TextMessage;
 
 let mut msg = TextMessage::new("441134960000", "441134960001", "Check this out: https://example.com");
 msg.content.preview_url = Some(true); // Enable link preview
@@ -74,7 +74,7 @@ let result = client.messages().send_text(&msg).await?;
 ### Image
 
 ```rust
-use infobip_sdk::models::messages::image::ImageMessage;
+use infobip_whatsapp_sdk::models::messages::image::ImageMessage;
 
 let mut msg = ImageMessage::new("441134960000", "441134960001", "https://example.com/photo.jpg");
 msg.content.caption = Some("Look at this!".into());
@@ -84,7 +84,7 @@ let result = client.messages().send_image(&msg).await?;
 ### Document
 
 ```rust
-use infobip_sdk::models::messages::document::DocumentMessage;
+use infobip_whatsapp_sdk::models::messages::document::DocumentMessage;
 
 let mut msg = DocumentMessage::new("441134960000", "441134960001", "https://example.com/invoice.pdf");
 msg.content.filename = Some("invoice.pdf".into());
@@ -95,7 +95,7 @@ let result = client.messages().send_document(&msg).await?;
 ### Location
 
 ```rust
-use infobip_sdk::models::messages::location::LocationMessage;
+use infobip_whatsapp_sdk::models::messages::location::LocationMessage;
 
 let mut msg = LocationMessage::new("441134960000", "441134960001", 44.7866, 20.4489);
 msg.content.name = Some("Belgrade".into());
@@ -106,7 +106,7 @@ let result = client.messages().send_location(&msg).await?;
 ### Template
 
 ```rust
-use infobip_sdk::models::messages::template::*;
+use infobip_whatsapp_sdk::models::messages::template::*;
 
 let msg = BulkMessage {
     messages: vec![FailoverMessage {
@@ -147,8 +147,8 @@ let result = client.messages().send_template(&msg).await?;
 ### Reply Buttons
 
 ```rust
-use infobip_sdk::models::interactive::common::*;
-use infobip_sdk::models::interactive::buttons::*;
+use infobip_whatsapp_sdk::models::interactive::common::*;
+use infobip_whatsapp_sdk::models::interactive::buttons::*;
 
 let msg = InteractiveButtonsMessage {
     from: "441134960000".into(),
@@ -179,8 +179,8 @@ let result = client.interactive().send_buttons(&msg).await?;
 ### List
 
 ```rust
-use infobip_sdk::models::interactive::common::*;
-use infobip_sdk::models::interactive::list::*;
+use infobip_whatsapp_sdk::models::interactive::common::*;
+use infobip_whatsapp_sdk::models::interactive::list::*;
 
 let msg = InteractiveListMessage {
     from: "441134960000".into(),
@@ -210,7 +210,7 @@ let result = client.interactive().send_list(&msg).await?;
 ## Template Management
 
 ```rust
-use infobip_sdk::models::templates::v2::*;
+use infobip_whatsapp_sdk::models::templates::v2::*;
 
 // List templates
 let templates = client.templates().get_templates("441134960000").await?;
@@ -289,8 +289,8 @@ match client.messages().send_text(&msg).await {
 Deserialize incoming webhooks from Infobip:
 
 ```rust
-use infobip_sdk::models::webhooks::{DeliveryResults, SeenResults};
-use infobip_sdk::models::inbound::WhatsAppInboundMessages;
+use infobip_whatsapp_sdk::models::webhooks::{DeliveryResults, SeenResults};
+use infobip_whatsapp_sdk::models::inbound::WhatsAppInboundMessages;
 
 // Delivery report webhook
 fn handle_delivery(body: &str) {
@@ -315,7 +315,7 @@ fn handle_seen(body: &str) {
 Configure timeouts, proxies, or TLS settings:
 
 ```rust
-use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
+use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
 
 let http = reqwest::Client::builder()
     .timeout(std::time::Duration::from_secs(30))

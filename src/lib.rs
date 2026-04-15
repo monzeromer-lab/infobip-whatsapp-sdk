@@ -9,8 +9,8 @@
 //! ## Quick Start
 //!
 //! ```rust,no_run
-//! use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-//! use infobip_sdk::models::messages::text::TextMessage;
+//! use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+//! use infobip_whatsapp_sdk::models::messages::text::TextMessage;
 //!
 //! #[tokio::main]
 //! async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -35,7 +35,7 @@
 //! The SDK supports all four Infobip authentication methods:
 //!
 //! ```rust
-//! use infobip_sdk::Auth;
+//! use infobip_whatsapp_sdk::Auth;
 //!
 //! // API Key (most common)
 //! let auth = Auth::ApiKey("your-api-key".into());
@@ -59,8 +59,8 @@
 //! rich inspection for logging, monitoring (Sentry, Datadog), and retry logic:
 //!
 //! ```rust,no_run
-//! # use infobip_sdk::{Auth, ClientConfig, WhatsAppClient};
-//! # use infobip_sdk::models::messages::text::TextMessage;
+//! # use infobip_whatsapp_sdk::{Auth, ClientConfig, WhatsAppClient};
+//! # use infobip_whatsapp_sdk::models::messages::text::TextMessage;
 //! # async fn example() {
 //! # let config = ClientConfig::new("https://example.com", Auth::ApiKey("k".into())).unwrap();
 //! # let client = WhatsAppClient::new(config);
@@ -114,7 +114,7 @@
 //! that Infobip sends to your server (delivery reports, seen reports, etc.):
 //!
 //! ```rust,no_run
-//! use infobip_sdk::models::webhooks::DeliveryResults;
+//! use infobip_whatsapp_sdk::models::webhooks::DeliveryResults;
 //!
 //! // In your webhook handler:
 //! fn handle_delivery_report(body: &str) {
